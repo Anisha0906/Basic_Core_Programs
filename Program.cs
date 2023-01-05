@@ -11,7 +11,7 @@ namespace BasicCoreProgramme
             static void Main(string[] args)
             {
                 Console.WriteLine("Welcome to Basic Core Program");
-                 Console.WriteLine("Choose option\n 1.Flip a Coin Head and Tail\t 2.Select Value is Leap Year Or not\t 3.Select Power of 2 Number ");
+                 Console.WriteLine("Choose option\n 1.Flip a Coin Head and Tail\t 2.Select Value is Leap Year Or not\t 3.Select Power of 2 Number\t 4.Harmonic Number ");
                 int selection = Convert.ToInt32(Console.ReadLine());
 
                 switch (selection)
@@ -29,6 +29,10 @@ namespace BasicCoreProgramme
                 case 3:
                     PowerOf2 CalculatePower = new PowerOf2();
                     CalculatePower.CalculationOfPower();
+                    break;
+                case 4:
+                    HarmonicNumber CalculateHarmonicNumber = new HarmonicNumber();
+                    CalculateHarmonicNumber.CalcHarmonicSeries();
                     break;
                 default:
                         Console.WriteLine("Invalid Selection.");
