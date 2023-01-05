@@ -8,8 +8,8 @@ namespace BasicCoreProgramme
 {
     class FlipCoinSimulation
     {
-        public int FlipHeads = 0;
-        public int FlipTails = 0;
+        public int FlipHeads=0;
+        public int FlipTails=0;
         const double ConstastDec = 0.5;
         public void CheckHeadTailPercentage()
         {
