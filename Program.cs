@@ -11,9 +11,7 @@ namespace BasicCoreProgramme
             static void Main(string[] args)
             {
                 Console.WriteLine("Welcome to Basic Core Program");
-                Console.WriteLine("Enter your choice ");
-                Console.WriteLine("------------------------------------");
-                Console.WriteLine("1 For: Flip a Coin Head and Tail. ");
+                 Console.WriteLine("Choose option\n 1.Flip a Coin Head and Tail\t 2.Select Value is Leap Year Or not ");
                 int selection = Convert.ToInt32(Console.ReadLine());
 
                 switch (selection)
@@ -23,7 +21,12 @@ namespace BasicCoreProgramme
                         FlipCoinSimulation FlipCoin = new FlipCoinSimulation();
                         FlipCoin.CheckHeadTailPercentage();
                         break;
-                    default:
+                case 2:
+                    //CheckLeapYearOrNot
+                    LeapYearOrNot LeapYearOrNot = new LeapYearOrNot();
+                    LeapYearOrNot.LeapYear();
+                    break;
+                default:
                         Console.WriteLine("Invalid Selection.");
                         break;
                 }
