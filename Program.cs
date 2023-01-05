@@ -11,12 +11,12 @@ namespace BasicCoreProgramme
             static void Main(string[] args)
             {
                 Console.WriteLine("Welcome to Basic Core Program");
-                 Console.WriteLine("Choose option\n 1.Flip a Coin Head and Tail\t 2.Select Value is Leap Year Or not\t 3.Select Power of 2 Number\t\n 4.Harmonic Number\t 5.Select Factors of number\t 6.Find Quotient and Remainder ");
+                 Console.WriteLine("Choose option\n 1.Flip a Coin Head and Tail\t 2.Select Value is Leap Year Or not\t 3.Select Power of 2 Number\t\n 4.Harmonic Number\t 5.Select Factors of number\t 6.Find Quotient and Remainder\t 7.Swap the Numbers ");
                 int selection = Convert.ToInt32(Console.ReadLine());
 
                 switch (selection)
                 {
-                    case 1:
+                case 1:
                         //FLIP COIN
                         FlipCoinSimulation FlipCoin = new FlipCoinSimulation();
                         FlipCoin.CheckHeadTailPercentage();
@@ -41,6 +41,10 @@ namespace BasicCoreProgramme
                 case 6:
                     QusRemainders QuesRem = new QusRemainders();
                     QuesRem.QuotientRemainder();
+                    break;
+                case 7:
+                    Swap2Number SwapTwoNo = new Swap2Number();
+                    SwapTwoNo.SwapTwoNumber();
                     break;
                 default:
                         Console.WriteLine("Invalid Selection.");
