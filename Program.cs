@@ -11,7 +11,7 @@ namespace BasicCoreProgramme
             static void Main(string[] args)
             {
                 Console.WriteLine("Welcome to Basic Core Program");
-                 Console.WriteLine("Choose option\n 1.Flip a Coin Head and Tail\t 2.Select Value is Leap Year Or not\t 3.Select Power of 2 Number\t\n 4.Harmonic Number\t 5.Select Factors of number\t 6.Find Quotient and Remainder\t 7.Swap the Numbers ");
+                 Console.WriteLine("Choose option\n 1.Flip a Coin Head and Tail\t 2.Select Value is Leap Year Or not\t 3.Select Power of 2 Number\t\n 4.Harmonic Number\t 5.Select Factors of number\t 6.Find Quotient and Remainder\t 7.Swap the Numbers\t\n 8.Even and Odd number ");
                 int selection = Convert.ToInt32(Console.ReadLine());
 
                 switch (selection)
@@ -45,6 +45,10 @@ namespace BasicCoreProgramme
                 case 7:
                     Swap2Number SwapTwoNo = new Swap2Number();
                     SwapTwoNo.SwapTwoNumber();
+                    break;
+                case 8:
+                    EvenOrOdd EvenOdd = new EvenOrOdd();
+                    EvenOdd.CheckEvenOrdd();
                     break;
                 default:
                         Console.WriteLine("Invalid Selection.");
