@@ -11,7 +11,7 @@ namespace BasicCoreProgramme
             static void Main(string[] args)
             {
                 Console.WriteLine("Welcome to Basic Core Program");
-                 Console.WriteLine("Choose option\n 1.Flip a Coin Head and Tail\t 2.Select Value is Leap Year Or not\t 3.Select Power of 2 Number\t 4.Harmonic Number ");
+                 Console.WriteLine("Choose option\n 1.Flip a Coin Head and Tail\t 2.Select Value is Leap Year Or not\t 3.Select Power of 2 Number\t\n 4.Harmonic Number\t 5.Select Factors of number ");
                 int selection = Convert.ToInt32(Console.ReadLine());
 
                 switch (selection)
@@ -33,6 +33,10 @@ namespace BasicCoreProgramme
                 case 4:
                     HarmonicNumber CalculateHarmonicNumber = new HarmonicNumber();
                     CalculateHarmonicNumber.CalcHarmonicSeries();
+                    break;
+                case 5:
+                    PrimeFactorization PrimeFactor = new PrimeFactorization();
+                    PrimeFactor.CalcSFactorialSeries();
                     break;
                 default:
                         Console.WriteLine("Invalid Selection.");
